@@ -64,7 +64,7 @@ details{display:block}summary{display:list-item}template{display:none}[hidden]{d
 
     --section-tagline-margin: 0;
 
-    --transition-duration: .3s;
+    --transition-duration: 0.3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 
     /* Paddings */
@@ -162,7 +162,8 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    transition: color var(--transition-duration), background-color var(--transition-duration);
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
 }
 
 .visually-hidden {
