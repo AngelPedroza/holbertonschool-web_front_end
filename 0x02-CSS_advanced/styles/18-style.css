@@ -80,7 +80,7 @@ details{display:block}summary{display:list-item}template{display:none}[hidden]{d
 
 }
 
-*/*, *::before, *::after*/{
+*, *:before, *:after{
     box-sizing: border-box;
 }
 
