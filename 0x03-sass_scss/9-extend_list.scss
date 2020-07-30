@@ -1,7 +1,7 @@
 /* Extend properties */
 .info { font-size: 12px; }
 
-.succes {
+.success {
     @extend .info;
     color: #00FF00; }
 
