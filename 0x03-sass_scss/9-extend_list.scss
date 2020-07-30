@@ -1,0 +1,10 @@
+/* Extend properties */
+.info { font-size: 12px; }
+
+.succes {
+    @extend .info;
+    color: #00FF00; }
+
+.warning {
+    @extend .info;
+    color: #FF0000; }

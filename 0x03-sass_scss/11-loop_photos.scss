@@ -1,0 +1,7 @@
+/* Use a loop to put the image */
+@import "11-photos";
+
+@each $author in $list-names {
+    .photo-#{$author} {
+	background: image-url("photos/#{$author}.jpg") no-repeat; }
+}
