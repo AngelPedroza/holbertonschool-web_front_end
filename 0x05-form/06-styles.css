@@ -940,14 +940,13 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
 
 /* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
 
-input:required:invalid:not(:focus):not(:placeholder-shown)
-  ~ .form-field-icon::after {
-  content: "✘";
+input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
+  content: '✘';
   color: var(--error-color);
 }
 
 input:required:valid ~ .form-field-icon::after {
-  content: "✔";
+  content: '✔';
   color: var(--valid-color);
 }
 
