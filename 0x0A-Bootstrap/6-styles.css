@@ -2,6 +2,10 @@
     border-color: #E0003C !important;
 }
 
+.text-muted {
+    color: #8C8C8C !important;
+}
+
 .btn-primary {
     background-color: #E0003C;
     border-color: #E0003C;
