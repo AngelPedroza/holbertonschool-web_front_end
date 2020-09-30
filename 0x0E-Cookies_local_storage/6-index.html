@@ -11,7 +11,7 @@
       const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
 
       function addItemToCart(item) {
-        localStorage.setItem(item, true);
+        window.sessionStorage.setItem(item, true);
       }
 
       function createStore() {
@@ -29,10 +29,10 @@
       }
 
       function displayCart() {
-        if (localStorage.length) {
+        if (sessionStorage.length) {
           var para = document.createElement("p");
           var text = document.createTextNode(
-            `You previously had ${localStorage.length} items in your cart`
+            `You previously had ${sessionStorage.length} items in your cart`
           );
           para.appendChild(text);
 
